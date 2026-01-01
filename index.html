@@ -5,9 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   <!-- SEO -->
-  <title>Elvis Romarick Fotsi | Data Analyst & Statistician</title>
-  <meta name="description" content="Data Analyst, Statistician and Data Science professional based in Québec, Canada. Expert in Python, R, Power BI, SAS, SQL." />
-  <meta name="keywords" content="Data Analyst, Statistician, Data Science, Python, R, Power BI, Québec" />
+  <title data-i18n="meta.title">Elvis Romarick Fotsi | Data Analyst & Statistician</title>
+  <meta name="description" content="Data Analyst, Statistician and Data Science professional based in Québec, Canada. Expert in Python, R, Power BI, SAS, SQL." data-i18n-meta="meta.description" />
+  <meta name="keywords" content="Data Analyst, Statistician, Data Science, Python, R, Power BI, Québec" data-i18n-meta="meta.keywords" />
 
   <link rel="stylesheet" href="css.css" />
 </head>
@@ -15,110 +15,56 @@
 <body>
 
 <header class="hero">
-  <button onclick="switchLang()">FR / EN</button>
+  <div class="lang-switch">
+    <button id="btn-fr">FR</button>
+    <button id="btn-en">EN</button>
+  </div>
 
-  <h1 data-fr="Elvis Romarick Fotsi" data-en="Elvis Romarick Fotsi"></h1>
-  <p data-fr="Analyste de données | Statisticien"
-     data-en="Data Analyst | Statistician"></p>
+  <h1 data-i18n="header.name">Elvis Romarick Fotsi</h1>
+  <p data-i18n="header.subtitle">Analyste de données | Statisticien</p>
 
-  <p>Québec, Canada</p>
+  <p data-i18n="header.location">Québec, Canada</p>
 
   <div class="links">
-    <a href="mailto:dufotsi2020@gmail.com">Email</a>
-    <a href="https://www.linkedin.com/in/ElvisFotsi" target="_blank">LinkedIn</a>
+    <a href="mailto:dufotsi2020@gmail.com" data-i18n="links.email">Email</a>
+    <a href="https://www.linkedin.com/in/ElvisFotsi" target="_blank" data-i18n="links.linkedin">LinkedIn</a>
   </div>
 </header>
 
 <section>
-  <h2 data-fr="À propos" data-en="About"></h2>
-  <p
-    data-fr="Analyste de données dynamique titulaire d’une maîtrise en statistique, avec une solide expérience en Python, R, Power BI, SAS et Excel. Spécialisé dans la transformation de données complexes en insights stratégiques."
-    data-en="Dynamic data analyst with a master’s degree in statistics, experienced in Python, R, Power BI, SAS, and Excel. Specialized in transforming complex data into strategic insights.">
-  </p>
+  <h2 data-i18n="about.title">À propos</h2>
+  <p data-i18n="about.content">Analyste de données dynamique titulaire d’une maîtrise en statistique, avec une solide expérience en Python, R, Power BI, SAS et Excel. Spécialisé dans la transformation de données complexes en informations exploitables pour la prise de décision.</p>
 </section>
 
 <section>
-  <h2 data-fr="Compétences techniques" data-en="Technical Skills"></h2>
-  <ul class="skills">
-    <li>Python</li><li>R</li><li>SAS</li><li>SQL</li>
-    <li>Power BI</li><li>Excel</li><li>SPSS</li>
-    <li>ETL / ELT</li><li>Git / GitHub</li>
-    <li>Econometrics</li><li>Machine Learning (bases)</li>
-  </ul>
+  <h2 data-i18n="skills.title">Compétences techniques</h2>
+  <ul class="skills" data-i18n-list="skills"></ul>
 </section>
 
 <section>
-  <h2 data-fr="Expérience professionnelle" data-en="Professional Experience"></h2>
+  <h2 data-i18n="experience.title">Expérience professionnelle</h2>
 
-  <div class="job">
-    <h3>Contrôleur de projet – Levio Conseils</h3>
-    <span>Ministère de la Cybersécurité et du Numérique | 2025–Présent</span>
-    <ul>
-      <li>Analyse des données d’assiduité des employés</li>
-      <li>Tableaux de bord Power BI</li>
-      <li>Appui à la planification stratégique</li>
-    </ul>
-  </div>
-
-  <div class="job">
-    <h3>Analyste de données – MSSS Québec</h3>
-    <span>2024–2025</span>
-    <ul>
-      <li>Analyse de la base MedEcho</li>
-      <li>Financement axé sur le patient</li>
-      <li>Traitement, imputation et validation des données</li>
-    </ul>
-  </div>
+  <div id="jobs-container" data-i18n-list="experience.jobs"></div>
 </section>
 
 <section>
-  <h2 data-fr="Projets" data-en="Projects"></h2>
-
-  <div class="project">
-    <h3>📊 Modélisation économétrique – Banque Nationale du Canada</h3>
-    <p>
-      Estimation du volume de transactions internationales des investisseurs canadiens
-      à l’aide de modèles économétriques.
-    </p>
-    <span>R • Économétrie • Présentation exécutive</span>
-  </div>
-
-  <div class="project">
-    <h3>📈 Analyse du risque systémique financier</h3>
-    <p>
-      Simulation Monte Carlo, test de causalité de Granger et analyse
-      de dépendance entre marchés financiers.
-    </p>
-    <span>Python • R • Finance</span>
-  </div>
-
-  <div class="project">
-    <h3>🏥 Analyse des politiques de santé publique</h3>
-    <p>
-      Évaluation des politiques de financement hospitalier au Québec
-      à partir de données administratives.
-    </p>
-    <span>SAS • Excel • Analyse publique</span>
-  </div>
+  <h2 data-i18n="projects.title">Projets</h2>
+  <div id="projects-container" data-i18n-list="projects.items"></div>
 </section>
 
 <section>
-  <h2 data-fr="Formation" data-en="Education"></h2>
-  <p><strong>Maîtrise en statistique (Data Science)</strong><br>
-     Université Laval, Québec — 2025</p>
-
-  <p><strong>Baccalauréat en probabilité et statistique</strong><br>
-     ISSEA, Cameroun</p>
+  <h2 data-i18n="education.title">Formation</h2>
+  <div id="education-container" data-i18n-list="education.items"></div>
 </section>
 
 <section>
-  <h2 data-fr="Contact" data-en="Contact"></h2>
-  <p>Email : dufotsi2020@gmail.com</p>
-  <p>Téléphone : +1 581 459 6011</p>
+  <h2 data-i18n="contact.title">Contact</h2>
+  <p data-i18n="contact.email">Email : dufotsi2020@gmail.com</p>
+  <p data-i18n="contact.phone">Téléphone : +1 581 459 6011</p>
 </section>
 
 <footer>
-  <p>© 2026 Elvis Romarick Fotsi</p>
+  <p data-i18n="footer">© 2026 Elvis Romarick Fotsi</p>
 </footer>
 
 <script src="js_lang.js"></script>
